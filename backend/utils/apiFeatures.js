@@ -41,6 +41,8 @@
 
 
 class ApiFeatures {
+  // qery-> all products
+  // qry str : { conditions:1}
     constructor(query, queryStr) {
       this.query = query;
       this.queryStr = queryStr;

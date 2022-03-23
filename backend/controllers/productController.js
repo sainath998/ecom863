@@ -15,14 +15,18 @@ const ApiFeatures = require("../utils/apiFeatures");
 
 exports.createProduct = catchAsyncErrors(async (req, res, next) => {
   let images = [];
-  console.log("got the produt");
   if (typeof req.body.images === "string") {
     images.push(req.body.images);
   } else {
     images = req.body.images;
   }
 
-  const imagesLinks = [];
+  const imagesLinks = [
+    {
+      public_id: "result.public_id",
+      url: "result.secure_url",
+    }
+  ];
 
   // for (let i = 0; i < images.length; i++) {
   //   const result = await cloudinary.v2.uploader.upload(images[i], {
@@ -72,7 +76,6 @@ exports.getAllProducts = catchAsyncErrors(async (req, res) => {
   //   resultPerPage,
   //   filteredProductsCount,
   // });
-  console.log("getting all prodicts");
 
 
   const resultPerPage = 8;
@@ -82,9 +85,18 @@ exports.getAllProducts = catchAsyncErrors(async (req, res) => {
     .search()
     .filter();
 
+    console.log(`query was `)
+    console.log(req.query);
   let products = await apiFeature.query;
 
   let filteredProductsCount = products.length;
+
+  const abd = await Product.find();
+  console.log(`Al  are  ${productCount} `)
+  console.log(abd);
+
+  console.log("products are ")
+  console.log(products);
 
   apiFeature.pagination(resultPerPage);
 
@@ -92,7 +104,7 @@ exports.getAllProducts = catchAsyncErrors(async (req, res) => {
 
   res.status(200).json({
     success: true,
-    products,
+    products:abd,
     productCount,
     resultPerPage,
     filteredProductsCount,
