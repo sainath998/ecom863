@@ -81,7 +81,7 @@ const LoginSignUp = ({ history, location }) => {
 
     if (isAuthenticated) {
       //   history.push(redirect);
-      navigate("/password/update");
+      navigate("/products");
     }
   }, [dispatch, error, alert, navigate, isAuthenticated]);
 

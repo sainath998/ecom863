@@ -35,8 +35,9 @@ import {
 export const getProduct =
   (keyword = "", currentPage = 1, price = [0, 25000], category, ratings = 0) =>
 
-  
+
   async (dispatch) => {
+
     try {
       dispatch({
         type: ALL_PRODUCT_REQUEST
@@ -44,7 +45,6 @@ export const getProduct =
 
       let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
 
-      console.log("calling");
       console.log(link);
       if (category) {
         link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
@@ -54,7 +54,6 @@ export const getProduct =
         data
       } = await axios.get(link);
 
-      console.log(data);
       dispatch({
         type: ALL_PRODUCT_SUCCESS,
         payload: data,
@@ -69,6 +68,7 @@ export const getProduct =
 
 // Get All Products For Admin
 export const getAdminProduct = () => async (dispatch) => {
+
   try {
     dispatch({
       type: ADMIN_PRODUCT_REQUEST
@@ -102,7 +102,6 @@ export const createProduct = (productData) => async (dispatch) => {
         "Content-Type": "application/json"
       },
     };
-    console.log("calling from front end");
 
     const {
       data
@@ -111,7 +110,6 @@ export const createProduct = (productData) => async (dispatch) => {
       productData,
       // config
     );
-    console.log("end of frontend calling")
 
     dispatch({
       type: NEW_PRODUCT_SUCCESS,
@@ -183,6 +181,7 @@ export const deleteProduct = (id) => async (dispatch) => {
 
 // Get Products Details
 export const getProductDetails = (id) => async (dispatch) => {
+
   try {
     dispatch({
       type: PRODUCT_DETAILS_REQUEST

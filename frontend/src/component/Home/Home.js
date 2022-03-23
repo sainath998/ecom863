@@ -23,6 +23,11 @@ const Home = () => {
   }, [dispatch, error,alert]);
 
   if (!products) return <div>Loading</div>;
+  if(products)
+  {
+    console.log("products are ");
+    console.log(products);
+  }
 
   return (
     <Fragment>
