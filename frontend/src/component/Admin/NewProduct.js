@@ -106,7 +106,7 @@ const NewProduct = () => {
             <h1>Create Product</h1>
 
             <div>
-              {/* <SpellcheckIcon /> */}
+              <SpellcheckIcon />
               <input
                 type="text"
                 placeholder="Product Name"
@@ -116,7 +116,7 @@ const NewProduct = () => {
               />
             </div>
             <div>
-              {/* <AttachMoneyIcon /> */}
+              <AttachMoneyIcon />
               <input
                 type="number"
                 placeholder="Price"
@@ -126,7 +126,7 @@ const NewProduct = () => {
             </div>
 
             <div>
-              {/* <DescriptionIcon /> */}
+              <DescriptionIcon />
 
               <textarea
                 placeholder="Product Description"
@@ -138,7 +138,7 @@ const NewProduct = () => {
             </div>
 
             <div>
-              {/* <AccountTreeIcon /> */}
+              <AccountTreeIcon />
               <select onChange={(e) => setCategory(e.target.value)}>
                 <option value="">Choose Category</option>
                 {categories.map((cate) => (

@@ -124,15 +124,15 @@ const PaymentHelper = ({ history }) => {
         <form className="paymentForm" onSubmit={(e) => submitHandler(e)}>
           <Typography>Card Info</Typography>
           <div>
-            {/* <CreditCardIcon /> */}
+            <CreditCardIcon />
             <CardNumberElement className="paymentInput" />
           </div>
           <div>
-            {/* <EventIcon /> */}
+            <EventIcon />
             <CardExpiryElement className="paymentInput" />
           </div>
           <div>
-            {/* <VpnKeyIcon /> */}
+            <VpnKeyIcon />
             <CardCvcElement className="paymentInput" />
           </div>
 

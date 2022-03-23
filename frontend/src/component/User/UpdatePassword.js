@@ -65,7 +65,7 @@ const UpdatePassword = ({ history }) => {
                 onSubmit={updatePasswordSubmit}
               >
                 <div className="loginPassword">
-                  {/* <VpnKeyIcon /> */}
+                  <VpnKeyIcon />
                   <input
                     type="password"
                     placeholder="Old Password"
@@ -76,7 +76,7 @@ const UpdatePassword = ({ history }) => {
                 </div>
 
                 <div className="loginPassword">
-                  {/* <LockOpenIcon /> */}
+                  <LockOpenIcon />
                   <input
                     type="password"
                     placeholder="New Password"
@@ -86,7 +86,7 @@ const UpdatePassword = ({ history }) => {
                   />
                 </div>
                 <div className="loginPassword">
-                  {/* <LockIcon /> */}
+                  <LockIcon />
                   <input
                     type="password"
                     placeholder="Confirm Password"

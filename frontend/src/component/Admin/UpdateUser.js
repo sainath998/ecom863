@@ -89,7 +89,7 @@ const UpdateUser = () => {
               <h1>Update User</h1>
 
               <div>
-                {/* <PersonIcon /> */}
+                <PersonIcon />
                 <input
                   type="text"
                   placeholder="Name"
@@ -99,7 +99,7 @@ const UpdateUser = () => {
                 />
               </div>
               <div>
-                {/* <MailOutlineIcon /> */}
+                <MailOutlineIcon />
                 <input
                   type="email"
                   placeholder="Email"
@@ -110,7 +110,7 @@ const UpdateUser = () => {
               </div>
 
               <div>
-                {/* <VerifiedUserIcon /> */}
+                <VerifiedUserIcon />
                 <select value={role} onChange={(e) => setRole(e.target.value)}>
                   <option value="">Choose Role</option>
                   <option value="admin">Admin</option>

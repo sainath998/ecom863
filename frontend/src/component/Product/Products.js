@@ -80,17 +80,17 @@ const Products = ({ match }) => {
           </div>
 
           <div className="filterBox">
-            {/* <Typography>Price</Typography> */}
-            {/* <Slider
+            <Typography>Price</Typography>
+            <Slider
               value={price}
               onChange={priceHandler}
               valueLabelDisplay="auto"
               aria-labelledby="range-slider"
               min={0}
               max={25000}
-            /> */}
+            />
 
-            {/* <Typography>Categories</Typography> */}
+            <Typography>Categories</Typography>
             <ul className="categoryBox">
               {categories.map((category) => (
                 <li
@@ -103,7 +103,7 @@ const Products = ({ match }) => {
               ))}
             </ul>
 
-            {/* <fieldset>
+            <fieldset>
               <Typography component="legend">Ratings Above</Typography>
               <Slider
                 value={ratings}
@@ -115,7 +115,7 @@ const Products = ({ match }) => {
                 min={0}
                 max={5}
               />
-            </fieldset> */}
+            </fieldset>
           </div>
           {resultPerPage < count && (
             <div className="paginationBox">

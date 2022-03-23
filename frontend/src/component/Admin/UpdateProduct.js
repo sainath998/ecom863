@@ -144,7 +144,7 @@ const UpdateProduct = () => {
             <h1>Update Product</h1>
 
             <div>
-              {/* <SpellcheckIcon /> */}
+              <SpellcheckIcon />
               <input
                 type="text"
                 placeholder="Product Name"
@@ -154,7 +154,7 @@ const UpdateProduct = () => {
               />
             </div>
             <div>
-              {/* <AttachMoneyIcon /> */}
+              <AttachMoneyIcon />
               <input
                 type="number"
                 placeholder="Price"
@@ -165,7 +165,7 @@ const UpdateProduct = () => {
             </div>
 
             <div>
-              {/* <DescriptionIcon /> */}
+              <DescriptionIcon />
 
               <textarea
                 placeholder="Product Description"
@@ -177,7 +177,7 @@ const UpdateProduct = () => {
             </div>
 
             <div>
-              {/* <AccountTreeIcon /> */}
+              <AccountTreeIcon />
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
@@ -192,7 +192,7 @@ const UpdateProduct = () => {
             </div>
 
             <div>
-              {/* <StorageIcon /> */}
+              <StorageIcon />
               <input
                 type="number"
                 placeholder="Stock"

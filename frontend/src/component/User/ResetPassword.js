@@ -63,7 +63,7 @@ const ResetPassword = () => {
                 onSubmit={resetPasswordSubmit}
               >
                 <div>
-                  {/* <LockOpenIcon /> */}
+                  <LockOpenIcon />
                   <input
                     type="password"
                     placeholder="New Password"
@@ -73,7 +73,7 @@ const ResetPassword = () => {
                   />
                 </div>
                 <div className="loginPassword">
-                  {/* <LockIcon /> */}
+                  <LockIcon />
                   <input
                     type="password"
                     placeholder="Confirm Password"

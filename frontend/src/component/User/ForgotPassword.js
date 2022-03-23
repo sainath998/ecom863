@@ -53,7 +53,7 @@ const ForgotPassword = () => {
                 onSubmit={forgotPasswordSubmit}
               >
                 <div className="forgotPasswordEmail">
-                  {/* <MailOutlineIcon /> */}
+                  <MailOutlineIcon />
                   <input
                     type="email"
                     placeholder="Email"

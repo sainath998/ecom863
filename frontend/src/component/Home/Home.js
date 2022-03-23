@@ -18,7 +18,7 @@ const Home = () => {
       alert.error(error);
       dispatch(clearErrors());
     }
-    console.log("calling products");
+    console.log("calling products")
     dispatch(getProduct());
   }, [dispatch, error,alert]);
 

@@ -89,7 +89,7 @@ const UpdateProfile = () => {
                 onSubmit={updateProfileSubmit}
               >
                 <div className="updateProfileName">
-                  {/* <FaceIcon /> */}
+                  <FaceIcon />
                   <input
                     type="text"
                     placeholder="Name"
@@ -100,7 +100,7 @@ const UpdateProfile = () => {
                   />
                 </div>
                 <div className="updateProfileEmail">
-                  {/* <MailOutlineIcon /> */}
+                  <MailOutlineIcon />
                   <input
                     type="email"
                     placeholder="Email"

@@ -127,14 +127,14 @@ const OrderList = ({ history }) => {
         <div className="productListContainer">
           <h1 id="productListHeading">ALL ORDERS</h1>
 
-          {/* <DataGrid
+          <DataGrid
             rows={rows}
             columns={columns}
             pageSize={10}
             disableSelectionOnClick
             className="productListTable"
             autoHeight
-          /> */}
+          />
         </div>
       </div>
     </Fragment>

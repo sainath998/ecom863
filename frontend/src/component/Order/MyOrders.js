@@ -95,14 +95,14 @@ const MyOrders = () => {
         <Loader />
       ) : (
         <div className="myOrdersPage">
-          {/* <DataGrid
+          <DataGrid
             rows={rows}
             columns={columns}
             pageSize={10}
             disableSelectionOnClick
             className="myOrdersTable"
             autoHeight
-          /> */}
+          />
 
           <Typography id="myOrdersHeading">{user.name}'s Orders</Typography>
         </div>

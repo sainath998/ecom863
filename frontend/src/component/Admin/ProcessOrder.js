@@ -163,7 +163,7 @@ const ProcessOrder = () => {
                   <h1>Process Order</h1>
 
                   <div>
-                    {/* <AccountTreeIcon /> */}
+                    <AccountTreeIcon />
                     <select onChange={(e) => 
                       {setStatus(e.target.value);
                         if(!e.target.value)

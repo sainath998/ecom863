@@ -148,7 +148,7 @@ const ProductReviews = () => {
             <h1 className="productReviewsFormHeading">ALL REVIEWS</h1>
 
             <div>
-              {/* <Star /> */}
+              <Star />
               <input
                 type="text"
                 placeholder="Product Id"
@@ -170,15 +170,14 @@ const ProductReviews = () => {
           </form>
 
           {reviews && reviews.length > 0 ? (
-            // <DataGrid
-            //   rows={rows}
-            //   columns={columns}
-            //   pageSize={10}
-            //   disableSelectionOnClick
-            //   className="productListTable"
-            //   autoHeight
-            // />
-            <div>{reviews.map((review)=><h2 style={{"alignContent":"center"}}>{review.comment}</h2>)}</div>
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              pageSize={10}
+              disableSelectionOnClick
+              className="productListTable"
+              autoHeight
+            />
           ) : (
             <h1 className="productReviewsFormHeading">No Reviews Found</h1>
           )}
