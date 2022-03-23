@@ -9,7 +9,7 @@ import Slider from "@material-ui/core/Slider";
 import { useAlert } from "react-alert";
 import Typography from "@material-ui/core/Typography";
 import MetaData from "../layout/MetaData";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import UserOptions from '../layout/Header/UserOptions'
 const categories = [
   "Laptop",
@@ -32,6 +32,7 @@ const Products = ({ match }) => {
   const [category, setCategory] = useState("");
 
   const [ratings, setRatings] = useState(0);
+  const navigate = useNavigate();
 
   const {
     products,
@@ -70,8 +71,10 @@ const Products = ({ match }) => {
         <Fragment>
           {isAuthenticated && <UserOptions user={user} />}
           <MetaData title="PRODUCTS -- ECOMMERCE" />
+          <button onClick={()=>{
+            navigate("/cart");
+          }}>Checkout</button>
           <h2 className="productsHeading">Products</h2>
-
           <div className="products">
             {products &&
               products.map((product) => (

@@ -21,7 +21,7 @@ import {
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import { NEW_REVIEW_RESET } from "../../constants/productConstants";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { compareSync } from "bcryptjs";
 
 const ProductDetails = () => {
@@ -86,6 +86,7 @@ const ProductDetails = () => {
     setOpen(false);
   };
 
+  const navigate = useNavigate();
   useEffect(() => {
     if (error) {
       alert.error(error);
@@ -130,6 +131,8 @@ const ProductDetails = () => {
                 style={{ width: "300px", height: "300px" }}
                 alt="product image"
               />
+            <button onClick={()=>{navigate('/cart')}}>Checkout</button>
+
             </div>
 
             <div>
