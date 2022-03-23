@@ -38,7 +38,8 @@ import UsersList from "./component/Admin/UsersList.js";
 import UpdateUser from "./component/Admin/UpdateUser.js";
 import ProductReviews from "./component/Admin/ProductReviews";
 
-import { useState ,useSelector} from "react";
+import { useState} from "react";
+import { useSelector } from "react-redux";
 import axios from "axios";
 
 import NotFound from './component/layout/Not Found/NotFound'
