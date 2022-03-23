@@ -1,6 +1,16 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
+  background-color: #1f1f38 ;
+  color: orange;
+
+}
+p,h1,h2,h3,h4,h5,div,button,a{
+  color: tomato;
+}
+
+a:hover,button:hover{
+  color: red;
 }
 
 body {

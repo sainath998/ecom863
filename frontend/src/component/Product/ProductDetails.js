@@ -115,7 +115,6 @@ const ProductDetails = () => {
           <MetaData title={`${product.name} -- ECOMMERCE`} />
           <div className="ProductDetails">
             <div>
-              <Carousel>
                 {product.images &&
                   product.images.map((item, i) => (
                     <img
@@ -125,7 +124,6 @@ const ProductDetails = () => {
                       alt={`${i} Slide`}
                     />
                   ))}
-              </Carousel>
               <img
                 src={product.images ? product.images[0].url : ""}
                 style={{ width: "300px", height: "300px" }}
@@ -205,12 +203,12 @@ const ProductDetails = () => {
               ></textarea>
             </DialogContent>
             <DialogActions>
-              <Button onClick={submitReviewToggle} color="secondary">
+              <buton onClick={submitReviewToggle} color="secondary">
                 Cancel
-              </Button>
-              <Button onClick={reviewSubmitHandler} color="primary">
+              </buton>
+              <button onClick={reviewSubmitHandler} color="primary">
                 Submit
-              </Button>
+              </button>
             </DialogActions>
           </Dialog>
           

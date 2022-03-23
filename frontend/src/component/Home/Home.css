@@ -23,7 +23,7 @@
   }
   
   .banner > a > button {
-    margin-bottom: 5vmax;
+    /* margin-bottom: 5vmax; */
     cursor: pointer;
     background-color: white;
     border: 1px solid white;
@@ -63,7 +63,7 @@
   
   .container {
     display: flex;
-    margin: 2vmax auto;
+    /* margin: 2vmax auto; */
     width: 80vw;
     flex-wrap: wrap;
     justify-content: center;
