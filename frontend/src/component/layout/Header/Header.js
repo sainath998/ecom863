@@ -1,12 +1,13 @@
 import React from "react";
 import { ReactNavbar } from "overlay-navbar";
 import logo from  "../../../images/logo.png"
+import { red } from "@material-ui/core/colors";
 
 const options = {
   burgerColorHover: "#eb4034",
   logo,
   logoWidth: "20vmax",
-  navColor1: "white",
+  navColor1: "red",
   logoHoverSize: "10px",
   logoHoverColor: "#eb4034",
   link1Text: "Home",
@@ -32,11 +33,11 @@ const options = {
   profileIconColorHover: "#eb4034",
   searchIconColorHover: "#eb4034",
   cartIconColorHover: "#eb4034",
-  cartIconMargin: "1vmax",
+  cartIconMargin: "1vmax"
 };
 
 const Header = () => {
-  return <ReactNavbar {...options} />;
+  return <ReactNavbar style={{"color":"red"}} {...options} />;
 };
 
 export default Header;

@@ -175,7 +175,7 @@ const ProductDetails = () => {
                 Description : <p>{product.description}</p>
               </div>
 
-              <button onClick={submitReviewToggle} className="submitReview">
+              <button  onClick={submitReviewToggle} className="submitReview">
                 Submit Review
               </button>
             </div>
@@ -205,12 +205,12 @@ const ProductDetails = () => {
               ></textarea>
             </DialogContent>
             <DialogActions>
-              <Button onClick={submitReviewToggle} color="secondary">
+              <button onClick={submitReviewToggle} color="secondary">
                 Cancel
-              </Button>
-              <Button onClick={reviewSubmitHandler} color="primary">
+              </button>
+              <button onClick={reviewSubmitHandler} color="primary">
                 Submit
-              </Button>
+              </button>
             </DialogActions>
           </Dialog>
           
