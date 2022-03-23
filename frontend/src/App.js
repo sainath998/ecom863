@@ -13,7 +13,6 @@ import UserOptions from "./component/layout/Header/UserOptions.js";
 import store from "./store";
 import { loadUser } from "./actions/userAction";
 import Profile from "./component/User/Profile.js";
-import { useSelector } from "react-redux";
 import UpdateProfile from './component/User/UpdateProfile.js'
 import UpdatePassword from './component/User/UpdatePassword.js'
 import ForgotPassword from './component/User/ForgotPassword.js'
@@ -39,7 +38,7 @@ import UsersList from "./component/Admin/UsersList.js";
 import UpdateUser from "./component/Admin/UpdateUser.js";
 import ProductReviews from "./component/Admin/ProductReviews";
 
-import { useState } from "react";
+import { useState ,useSelector} from "react";
 import axios from "axios";
 
 import NotFound from './component/layout/Not Found/NotFound'

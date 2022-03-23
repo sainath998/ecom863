@@ -166,10 +166,11 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 // get user Details
 
 exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
-  if(!req.user.id) return res.status(401).json({
-    success:false,
-    user:null
-  })
+  if(!req.user.id) return  res.status(401).json({
+    success: false,
+    user:null,
+    token:null,
+  });
   const user = await User.findById(req.user.id);
   res.status(200).json({
     success: true,

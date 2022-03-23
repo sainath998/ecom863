@@ -1,9 +1,8 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import PaymentHelper from './PaymentHelper.js'
 
 import { loadStripe } from "@stripe/stripe-js";
-import { useEffect } from 'react';
-import { useState } from 'react';
+
 import { Elements } from "@stripe/react-stripe-js";
 import axios from 'axios';
 
